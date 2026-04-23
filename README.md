@@ -1,23 +1,37 @@
-# WhatsApp CRM Message Generator
+# WhatsApp CRM Message Generator 💬
 
-A simple Flask-based service to generate predefined WhatsApp messages using prompts.
+A Flask-based web app that generates professional WhatsApp messages for CRM use.
 
-## Setup
+## Features
+- 🎯 **Smart category detection** — auto-detects greeting, follow-up, thank you, promotion, or appointment
+- 📋 **One-click copy** — copy generated messages to clipboard
+- 🤖 **Optional AI** — uses OpenAI GPT if an API key is provided, otherwise uses built-in templates
+- 🌐 **Web UI** — clean, dark-themed interface
 
-1. Install dependencies:
-   pip install -r requirements.txt
+## Quick Start
 
-2. Set your OpenAI API key in message_generator.py
+```bash
+# Install dependencies
+pip install -r requirements.txt
 
-3. Run the app:
-   python app.py
+# Run the app
+python app.py
+```
 
-4. POST to /generate-message with JSON:
-   {
-       "prompt": "I want to send a Diwali wish to my customers"
-   }
+Open [http://localhost:5052](http://localhost:5052) in your browser.
 
-5. Response:
-   {
-       "message": "Hello {name}, Diwali greetings! Wishing you joy, prosperity, and happiness this festive season. Namaste!"
-   }
+## Optional: Enable AI-powered messages
+
+1. Copy `.env.example` to `.env`
+2. Add your OpenAI API key
+3. Restart the app
+
+```bash
+cp .env.example .env
+# Edit .env and add your key
+```
+
+## Tech Stack
+- Python / Flask
+- OpenAI API (optional)
+- Vanilla HTML/CSS/JS frontend
