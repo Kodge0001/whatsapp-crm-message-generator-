@@ -1,37 +1,38 @@
-# WhatsApp CRM Message Generator 💬
+# 💬 WhatsApp CRM Message Generator
 
-A Flask-based web app that generates professional WhatsApp messages for CRM use.
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
 
-## Features
-- 🎯 **Smart category detection** — auto-detects greeting, follow-up, thank you, promotion, or appointment
-- 📋 **One-click copy** — copy generated messages to clipboard
-- 🤖 **Optional AI** — uses OpenAI GPT if an API key is provided, otherwise uses built-in templates
-- 🌐 **Web UI** — clean, dark-themed interface
+An AI-powered tool designed to streamline professional communication on WhatsApp. This CRM tool automatically generates polished, context-aware messages using smart templates and AI category detection.
 
-## Quick Start
+## 🌟 Key Features
+- **Smart Message Generation**: Create professional messages in seconds.
+- **Category Detection**: AI identifies the intent of your message for better accuracy.
+- **Custom Templates**: Save and reuse your most successful message structures.
+- **Modern Dashboard**: Sleek, responsive interface for easy management.
 
-```bash
-# Install dependencies
-pip install -r requirements.txt
+## 🛠️ Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/Kodge0001/whatsapp-crm-message-generator-.git
+   ```
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. **Set up your API Key**:
+   Create a `.env` file and add your OpenAI API key:
+   ```env
+   OPENAI_API_KEY=your_key_here
+   ```
+4. **Run the application**:
+   ```bash
+   python app.py
+   ```
 
-# Run the app
-python app.py
-```
+## 🚀 Usage
+Open `http://localhost:5052` in your browser to start generating messages.
 
-Open [http://localhost:5052](http://localhost:5052) in your browser.
-
-## Optional: Enable AI-powered messages
-
-1. Copy `.env.example` to `.env`
-2. Add your OpenAI API key
-3. Restart the app
-
-```bash
-cp .env.example .env
-# Edit .env and add your key
-```
-
-## Tech Stack
-- Python / Flask
-- OpenAI API (optional)
-- Vanilla HTML/CSS/JS frontend
+---
+*Developed by [Anurag Kodge](https://github.com/Kodge0001)*
