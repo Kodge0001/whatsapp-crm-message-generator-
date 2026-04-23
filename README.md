@@ -1,16 +1,37 @@
 # 💬 WhatsApp CRM Message Generator
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-![OpenAI](https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white)
+<div align="center">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+  <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" />
+</div>
+
+<br />
 
 An AI-powered tool designed to streamline professional communication on WhatsApp. This CRM tool automatically generates polished, context-aware messages using smart templates and AI category detection.
 
+---
+
+## 🔄 Application Flow
+
+```mermaid
+graph LR
+    A[User Input] --> B[AI Engine]
+    B -->|Detect Category| C{Template Selector}
+    C -->|Drafting| D[Final Message]
+    D --> E[Copy to WhatsApp]
+    
+    style B fill:#412991,color:#fff
+    style E fill:#25D366,color:#fff
+```
+
+---
+
 ## 🌟 Key Features
-- **Smart Message Generation**: Create professional messages in seconds.
-- **Category Detection**: AI identifies the intent of your message for better accuracy.
-- **Custom Templates**: Save and reuse your most successful message structures.
-- **Modern Dashboard**: Sleek, responsive interface for easy management.
+- **🤖 AI Categorization**: Automatically identifies message intent (e.g., Sales, Support, Intro).
+- **📋 Smart Templates**: Pre-configured professional templates for common scenarios.
+- **⚡ One-Click Copy**: Instantly copy generated messages for WhatsApp usage.
+- **🖥️ Responsive UI**: Clean and minimal dashboard for distraction-free work.
 
 ## 🛠️ Installation
 1. **Clone the repository**:
